@@ -13,8 +13,9 @@ import java.util.Scanner;
         long currentMinute = totalMinutes % 60;
         long totalHours = totalMinutes / 60;
         long currentHour = totalHours % 24;
-        long Hour = currentHour + offset;
+        long Hour = (currentHour + offset) % 24;
         
         System.out.println("Current time is " + Hour + ":" + currentMinute + ":" + currentSecond);
     }
+
 }
